@@ -1,5 +1,9 @@
 from flask import Flask, render_template, request, jsonify
-from db_config import get_db_connection
+try:
+    from db_config import get_db_connection
+except ImportError:
+    print("Database configuration not found or mysql-connector-python is missing.")
+    get_db_connection = None
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
