@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <!-- LEFT SIDE -->
+        <div class="left">
+            <img src="{{url_for('static',filename='images/login.png') }}" alt="login">
+            <button class="create-btn">Create an account</button>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+            <h2>Sign up</h2>
+
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Your name">
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="remember">
+                <input type="checkbox">
+                <label>Remember me</label>
+            </div>
+
+            <button class="login-btn" onclick="login()">Log in</button>
+
+            <p class="or">Or login with</p>
+
+            <div class="social">
+                <button class="fb">F</button>
+                <button class="tw">T</button>
+                <button class="gg">G</button>
+            </div>
+
+            <p id="msg"></p>
+        </div>
+
+    </div>
+</div>
+
+<script src="{{url_for('static',filename='js/script.js') }}"></script>
+</body>
+</html>

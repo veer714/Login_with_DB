@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #efefef;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 900px;
+    height: 500px;
+    background: #f5f5f5;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* LEFT */
+.left {
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.left img {
+    width: 80%;
+}
+
+.create-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* RIGHT */
+.right {
+    width: 50%;
+    background: #ffffff;
+    border-radius: 0 20px 20px 0;
+    padding: 40px;
+}
+
+.right h2 {
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #5b8def;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0;
+    color: gray;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.fb { background: #4267B2; }
+.tw { background: #1DA1F2; }
+.gg { background: #DB4437; }
+
+#msg {
+    text-align: center;
+    margin-top: 15px;
+}
